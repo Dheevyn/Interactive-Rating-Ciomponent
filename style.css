@@ -1,0 +1,133 @@
+:root {
+    --orange: hsl(25, 97%, 53%);
+    
+    --Light-Grey: hsl(217, 12%, 63%);
+    --Medium-Grey: hsl(216, 12%, 54%);
+    --Medium-Blue: hsl(215, 18%, 19%);
+    --Dark-Blue: hsla(217, 26%, 20%, 0.719);
+    --Very-Dark-Blue: hsl(216, 12%, 8%);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Overpass', sans-serif;
+    background-color: var(--Very-Dark-Blue);
+    color: white;
+}
+
+.container {
+    display: grid;
+    place-items: center;
+    height: 100vh;
+}
+
+.rating-card {
+    background-color: var(--Dark-Blue);
+    text-align: left;
+    border-radius: 18px;
+    max-width: 350px;
+    padding: 30px;
+}
+
+.rating-card img {
+    background-color: var(--Medium-Blue);
+    border-radius: 50%;
+    padding: 10px;
+    margin-bottom: 25px;
+}
+
+.rating-card h1 {
+    font-size: 20px;
+    margin-bottom: 13px;
+}
+
+.rating-card p {
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--Light-Grey);
+    margin-bottom: 22px;
+}
+
+.rating-card .rating-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+}
+
+.rating-buttons .btn {
+    width: 3rem;
+    background-color: var(--Medium-Blue);
+    border-style: none;
+    border-radius: 50%;
+    padding: 15px;
+    color: var(--Medium-Grey);
+}
+
+.rating-buttons .btn:focus {
+    color: white;
+    background-color: var(--Light-Grey);
+}
+
+.rating-buttons .btn:hover {
+    color: white;
+    background-color: var(--orange);
+}
+
+#btn-submit {
+    width: 100%;
+    background-color: var(--orange);
+    color: white;
+    border-style: none;
+    border-radius: 35px;
+    padding-block: 10px;
+    padding-inline: 15px;
+}
+
+#btn-submit:hover {
+    background-color: white;
+    color: var(--orange);
+}
+
+.thanks-card {
+    background-color: var(--Dark-Blue);
+    max-width: 350px;
+    border-radius: 18px;
+    padding: 30px;
+    text-align: center;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+}
+
+.thanks-card img {
+    width: 140px;
+}
+
+#rating {
+    margin-top: 20px;
+    width: fit-content;
+    border-radius: 18px;
+    color: var(--orange);
+    padding: 10px;
+    background-color: var(--Medium-Blue);
+    font-size: 14px;
+}
+
+.thanks-card h1 {
+    margin-top: 25px;
+    margin-bottom: 15px;
+}
+
+#thanks-decription {
+    color: var(--Light-Grey);
+    font-size: 14px;
+}
+
+.hidden {
+    display: none;
+}
